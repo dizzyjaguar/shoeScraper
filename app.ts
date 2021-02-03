@@ -9,8 +9,8 @@ try {
   // deno-lint-ignore no-explicit-any
   const doc: any = new DOMParser().parseFromString(html, 'text/html');
 
-  // this is currently grabbing the title of vivobarefoot page
-  const scrape = await doc.querySelector('h1').textContent;
+  //this is grabbing the value of the input button that says whether its sold out or not
+  const scrape = await doc.querySelector('#page_MainContent_product_detail_btnCart').getAttribute('value');
 
 
   console.log(scrape)
