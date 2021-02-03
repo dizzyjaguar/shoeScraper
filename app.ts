@@ -1,8 +1,8 @@
 import { DOMParser } from 'https://deno.land/x/deno_dom/deno-dom-wasm.ts';
-import {cron, daily, everyMinute, monthly, weekly} from 'https://deno.land/x/deno_cron/cron.ts';
+// import {cron, daily, everyMinute, monthly, weekly} from 'https://deno.land/x/deno_cron/cron.ts';
 
 
-daily( async() => {
+// daily( async() => {
   const url = 'https://www.vivobarefoot.com/us/womens/outdoor/primus-trail-winter-fg-womens';
   
   try {
@@ -19,7 +19,7 @@ daily( async() => {
   } catch(error) {
     console.log(error)
   }
-})
+// })
 
 
 export {};
